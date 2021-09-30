@@ -32,9 +32,10 @@ public class Hotel {
         bedroom1.addGuestToRoom(guest);
     }
 
-    public Booking bookRoom(int numNights, Bedroom bedroom1) {
+    public Booking bookRoom(int numNights, Bedroom bedroom1, Guest guest) {
         Booking booking;
         booking = new Booking(numNights, bedroom1);
+        booking.addGuestToBooking(guest);
         return booking;
     }
 }

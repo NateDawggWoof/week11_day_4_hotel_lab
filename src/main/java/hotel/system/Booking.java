@@ -39,4 +39,8 @@ public class Booking {
     public void addGuestToBooking(Guest guest){
         this.guests.add(guest);
     }
+
+    public int totalPriceOfBooking() {
+        return this.numNights * this.bedroom.getRoomType().getPrice();
+    }
 }

@@ -42,7 +42,13 @@ public class BookingTest {
     @Test
     public void bookingCanAddGuest() {
         booking.addGuestToBooking(guest);
-        assertEquals(1, booking.getGuestCount());
+        booking.addGuestToBooking(guest);
+        assertEquals(2, booking.getGuestCount());
+    }
+
+    @Test
+    public void totalPrice() {
+        assertEquals(150, booking.totalPriceOfBooking());
     }
 
 

@@ -35,4 +35,8 @@ public class Booking {
     public int getGuestCount() {
         return this.guests.size();
     }
+
+    public void addGuestToBooking(Guest guest){
+        this.guests.add(guest);
+    }
 }
